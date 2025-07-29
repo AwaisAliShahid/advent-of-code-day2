@@ -13,6 +13,7 @@ def is_safe(report):
     return False
 
 # Function to count safe reports
+# Function to count safe reports
 def count_safe_reports(lines):
     safe_count = 0
     for line in lines:
@@ -20,11 +21,9 @@ def count_safe_reports(lines):
             continue
         report = list(map(int, line.strip().split()))
         if is_safe(report):
-            print(f"SAFE: {report}")
             safe_count += 1
-        else:
-            print(f"UNSAFE: {report}")
     return safe_count
+
 
 # SAMPLE TEST DATA (you can change this later)
 input_data = """
@@ -1034,4 +1033,4 @@ input_data = """
 lines = input_data.strip().split('\n')
 
 result = count_safe_reports(lines)
-print(f"\n Total SAFE reports: {result}")
+print(f"Total SAFE reports: {result}")
