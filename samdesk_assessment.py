@@ -13,7 +13,6 @@ def is_safe(report):
     return False
 
 # Function to count safe reports
-# Function to count safe reports
 def count_safe_reports(lines):
     safe_count = 0
     for line in lines:
@@ -25,7 +24,7 @@ def count_safe_reports(lines):
     return safe_count
 
 
-# SAMPLE TEST DATA (you can change this later)
+# SAMPLE TEST DATA 
 input_data = """
 16 18 20 22 23 22
 9 10 12 13 13
